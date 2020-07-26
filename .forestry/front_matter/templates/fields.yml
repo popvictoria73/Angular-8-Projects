@@ -1,4 +1,23 @@
 ---
 label: Fields
 hide_body: false
-fields: []
+fields:
+- name: first_name
+  type: text
+  config:
+    required: true
+    min: 3
+    max: 99
+  label: First Name
+- name: message
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+    min: 2
+    max: 500
+  label: Message
+  description: 'Input your message '
