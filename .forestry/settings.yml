@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: ab
+  label: Contact
+  create: all
+  match: "**/*"
+  read_only: false
 - type: document
   path: ab
   label: Home
